@@ -12,6 +12,7 @@ pub fn page(back_enabled: bool, fetched_at: DateTime<Utc>, content: Markup) -> M
                 meta charset="utf-8";
                 title { "pollen.party" }
                 meta name="viewport" content="width=device-width, initial-scale=1" {}
+                meta name="google-adsense-account" content="ca-pub-3879492296270326" {}
                 link  rel="stylesheet" href="style.css" {}
                 script src="script.js" defer {}
             }
@@ -34,6 +35,9 @@ pub fn page(back_enabled: bool, fetched_at: DateTime<Utc>, content: Markup) -> M
                         }
                     }
                 }
+                script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3879492296270326" crossorigin="anonymous" {}
+                ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3879492296270326" data-ad-slot="8453972685" data-ad-format="auto" data-full-width-responsive="true" {}
+                script { "(adsbygoogle = window.adsbygoogle || []).push({});" }
             }
         }
     }
